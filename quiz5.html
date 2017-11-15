@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Diana Copeland
+	 Demonstrates use of forms, text, password, and email inputs
+	 Demonstrates radio buttons, select tags and checkbox input
+	 Also demonstrates validations
+-->
+<html>
+<head>
+	<title>My First Registration Form</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+	<!-- Labels and inputs for first and last name, both fields are required -->
+	<label for="firstname">First Name: </label>
+	<input id="firstname" type="text" name="first" placeholder="Jane" required>
+
+	<label for="lastname">Last Name: </label>
+	<input id="lastname" type="text" name="last" placeholder="Doe" required>
+
+	<!-- This div is for the gender identification and radio buttons -->
+	<div>
+		<label for="male">Male </label>
+		<input id="male" type="radio" name="sex" value="male">
+
+		<label for="female">Female </label>
+		<input id="female" type="radio" name="sex" value="female">
+
+		<label for="other">Other </label>
+		<input id="other" type="radio" name="sex" value="other">
+	</div>
+
+
+	<!-- This div is for the email and password inputs
+		 The email field is required
+		 Password has a patten attribute set up to specify password must be 5-10 characters.
+	-->
+	<div>
+		<label for="email">Email: </label>
+		<input id="male" type="email" name="reginfo" placeholder="your email" required>
+
+		<label for="password">Password: </label>
+		<input id="password" type="password" pattern=".{5,10}" name="reginfo" required title="Password must be between 5 and 10 characters">
+	</div>
+
+	<!-- This div holds the label and selects for month, day and year, they are drop 	  down menus 
+	-->
+	<div>
+		<label>Birthday: </label>
+
+		<select name="month">
+			<option>Month</option>
+		</select>
+
+		<select name="day">
+			<option>Day</option>
+		</select>
+
+		<select name="year">
+			<option>Year</option>
+		</select>
+	</div>
+
+
+	<!-- This div has the terms and conditions label and checkbox -->
+	<div>
+		<label for="agreed">I agree to the terms and conditions</label>
+		<input id="agreed" type="checkbox" name="terms">
+	</div>
+
+	<!-- Submit for the input of the form -->
+	<input type="submit" name="submit">
+</form>
+
+</body>
+</html>

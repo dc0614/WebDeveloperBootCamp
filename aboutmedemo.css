@@ -1,0 +1,21 @@
+h1	{
+	color: orange;
+	border-color: red;
+	border-width: 5px;
+	border-style: solid;
+}
+
+li	{
+	color: blue;
+}
+
+h4	{
+	color: black;
+	background: rgb(255, 150, 145);
+}
+
+body {
+	background: url(http://wallpapercave.com/wp/wXLTbVI.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Diana Copeland 
+	 Working on forms-->
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+<h1>Login</h1>
+
+<form>
+<!-- action - where the form send data to -->
+<!-- method - where HTTP method (get/post) -->
+<!-- Because no action or method it sends data to same place that you are -->
+<!-- action="http://wikipedia.org" method="GET", test data -->
+
+<label for="username">
+	Username:
+</label>
+<input id="username" type="text" placeholder="username" required>
+
+<label for="password">
+	Password:
+</label>
+<input id="password" type="password" placeholder="password">
+
+<input type="Submit">
+</form>
+
+<!-- Here starts the inputs.html demo -->
+
+<p>Do you prefer cats or dogs</p>
+
+<form>
+	<label for="dogs">Dogs: </label>
+	<input id="dogs" type="radio" name="petChoice" value="dogs">
+
+	<label for="cats"> Cats: </label>
+	<input id="cats" type="radio" name="petChoice" value="CATS">
+
+	<p>What's your favorite color?</p>
+	<select name="color">
+		<option value="RED">Ruby</option>
+		<option>Orange</option>
+		<option>Yellow</option>
+	</select>
+
+	<textarea name="paragraph" rows="10" cols="10"></textarea>
+
+	<button>Go!</button>
+</form>
+
+</body>
+</html>
